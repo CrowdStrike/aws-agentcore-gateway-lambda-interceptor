@@ -248,3 +248,23 @@ returns HTTP 400 before the request reaches the upstream model.
 - Responses larger than ~3 MB (encoded) exceed the Lambda 6 MB payload limit.
   Enable **Exclude response body** in the interceptor's payload filter settings
   in the console, or reduce the upstream model's max-tokens setting.
+
+---
+
+## Support
+
+aws-agentcore-gateway-lambda-interceptor is a community-driven, open source project that integrates CrowdStrike Guardian security guardrails with the AWS AgentCore Gateway. While not a formal CrowdStrike product, it is maintained by CrowdStrike and supported in partnership with the open source developer community.
+
+### Issue Reporting and Questions
+
+Issues may be reported on GitHub and are used to track bugs, documentation updates, enhancement requests, and security concerns.
+
+### Support Escalation
+
+We endeavor to provide support for aws-agentcore-gateway-lambda-interceptor within the repository. This expands our online knowledge base, enables self-help for our community, and can reduce the time needed to receive answers.
+
+If you are a CrowdStrike customer and would prefer to have your questions or issues handled directly with CrowdStrike Support, you are welcome to contact the CrowdStrike technical support team.
+
+## License
+
+MIT License — see [LICENSE](LICENSE) for full text.
