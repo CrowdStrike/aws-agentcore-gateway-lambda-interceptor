@@ -1,3 +1,6 @@
+![CrowdStrike Logo (Light)](https://raw.githubusercontent.com/CrowdStrike/.github/main/assets/cs-logo-light-mode.png#gh-light-mode-only)
+![CrowdStrike Logo (Dark)](https://raw.githubusercontent.com/CrowdStrike/.github/main/assets/cs-logo-dark-mode.png#gh-dark-mode-only)
+
 # CrowdStrike Guardian — AWS AgentCore Gateway Interceptor
 
 Intercepts LLM requests and responses flowing through an AWS AgentCore Gateway
@@ -253,17 +256,9 @@ returns HTTP 400 before the request reaches the upstream model.
 
 ## Support
 
-aws-agentcore-gateway-lambda-interceptor is a community-driven, open source project that integrates CrowdStrike Guardian security guardrails with the AWS AgentCore Gateway. While not a formal CrowdStrike product, it is maintained by CrowdStrike and supported in partnership with the open source developer community.
+aws-agentcore-gateway-lambda-interceptor is a community-driven, open source project designed to intercept and inspect LLM requests and MCP tool calls flowing through AWS AgentCore Gateway with CrowdStrike Guardian. While not a formal CrowdStrike product, aws-agentcore-gateway-lambda-interceptor is maintained by CrowdStrike and supported in partnership with the open source developer community.
 
-### Issue Reporting and Questions
-
-Issues may be reported on GitHub and are used to track bugs, documentation updates, enhancement requests, and security concerns.
-
-### Support Escalation
-
-We endeavor to provide support for aws-agentcore-gateway-lambda-interceptor within the repository. This expands our online knowledge base, enables self-help for our community, and can reduce the time needed to receive answers.
-
-If you are a CrowdStrike customer and would prefer to have your questions or issues handled directly with CrowdStrike Support, you are welcome to contact the CrowdStrike technical support team.
+For additional details on the support policy for this project, please see [SUPPORT.md](https://github.com/CrowdStrike/aws-agentcore-gateway-lambda-interceptor/SUPPORT.md).
 
 ## License
 
