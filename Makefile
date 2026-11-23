@@ -1,5 +1,5 @@
 IMAGE  ?= aidr-agentcore-interceptor
-TAG    ?= latest
+TAG    ?= 0.0.1
 DOCKER ?= podman   # override with DOCKER=docker if needed
 
 .PHONY: setup test build push ecr-login
