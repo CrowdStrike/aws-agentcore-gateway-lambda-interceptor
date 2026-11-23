@@ -1,3 +1,6 @@
+![CrowdStrike Logo (Light)](https://raw.githubusercontent.com/CrowdStrike/.github/main/assets/cs-logo-light-mode.png#gh-light-mode-only)
+![CrowdStrike Logo (Dark)](https://raw.githubusercontent.com/CrowdStrike/.github/main/assets/cs-logo-dark-mode.png#gh-dark-mode-only)
+
 # CrowdStrike Guardian — AWS AgentCore Gateway Interceptor
 
 Intercepts LLM requests and responses flowing through an AWS AgentCore Gateway
@@ -248,3 +251,15 @@ returns HTTP 400 before the request reaches the upstream model.
 - Responses larger than ~3 MB (encoded) exceed the Lambda 6 MB payload limit.
   Enable **Exclude response body** in the interceptor's payload filter settings
   in the console, or reduce the upstream model's max-tokens setting.
+
+---
+
+## Support
+
+aws-agentcore-gateway-lambda-interceptor is a community-driven, open source project designed to intercept and inspect LLM requests and MCP tool calls flowing through AWS AgentCore Gateway with CrowdStrike Guardian. While not a formal CrowdStrike product, aws-agentcore-gateway-lambda-interceptor is maintained by CrowdStrike and supported in partnership with the open source developer community.
+
+For additional details on the support policy for this project, please see [SUPPORT.md](https://github.com/CrowdStrike/aws-agentcore-gateway-lambda-interceptor/SUPPORT.md).
+
+## License
+
+MIT License — see [LICENSE](LICENSE) for full text.
