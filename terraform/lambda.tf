@@ -29,6 +29,8 @@ resource "aws_lambda_function" "interceptor" {
     )
   }
 
+  kms_key_arn = var.kms_key_arn != "" ? var.kms_key_arn : null
+
   tags = var.tags
 
   depends_on = [aws_iam_role_policy_attachment.basic_execution]
