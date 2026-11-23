@@ -99,6 +99,12 @@ variable "security_group_ids" {
   description = "VPC security group IDs for the Lambda function."
 }
 
+variable "kms_key_arn" {
+  type        = string
+  default     = ""
+  description = "ARN of a customer-managed KMS key for encrypting the DynamoDB table and Lambda environment variables. Leave empty to use the AWS-managed default key."
+}
+
 variable "tags" {
   type        = map(string)
   default     = {}

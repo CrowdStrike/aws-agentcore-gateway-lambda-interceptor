@@ -58,6 +58,24 @@ resource "aws_iam_role_policy" "secrets" {
   })
 }
 
+resource "aws_iam_role_policy" "kms" {
+  count = var.kms_key_arn != "" ? 1 : 0
+  name  = "${local.name_prefix}-kms"
+  role  = aws_iam_role.interceptor.id
+
+  policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [{
+      Effect = "Allow"
+      Action = [
+        "kms:GenerateDataKey",
+        "kms:Decrypt",
+      ]
+      Resource = var.kms_key_arn
+    }]
+  })
+}
+
 # Allow the AgentCore gateway service role to invoke the Lambda
 resource "aws_lambda_permission" "agentcore_invoke" {
   statement_id  = "AllowAgentCoreInvoke"
